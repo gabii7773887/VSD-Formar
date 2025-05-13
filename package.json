@@ -16,6 +16,7 @@
     "@eslint/js": "^9.26.0",
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.17",
+    "@types/sequelize": "^4.28.20",
     "@typescript-eslint/eslint-plugin": "^8.32.0",
     "@typescript-eslint/parser": "^8.32.0",
     "eslint": "^9.26.0",
@@ -25,5 +26,9 @@
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
   }
 }
