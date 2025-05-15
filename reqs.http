@@ -1,0 +1,36 @@
+# @name createUser
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@inter.net"
+}
+
+###
+
+
+@userId = {{createUser.response.body.id}}
+
+
+
+### USERS
+
+GET http://localhost:3000/users/{{userId}}
+
+###
+
+PATCH http://localhost:3000/users/{{userId}}
+content-type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@inter.net"
+
+}
+
+###
+
+DELETE http://localhost:3000/users/{{userId}}
+
+###
